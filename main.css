@@ -1,0 +1,26 @@
+body {
+    font-family:Tahoma;
+    font-size:9pt;
+}
+.layers {
+    position:relative;
+    float:left;
+    
+}
+
+.layers > canvas {
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+.tilesetWrapper {
+    position:relative;
+
+    float:left;
+    clear:both;
+}
+
+.tilesetWrapper > img,canvas {
+    position:absolute;
+}

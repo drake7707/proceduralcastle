@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Procedural castle</title>
+    <link rel='stylesheet' href='main.css' />
+    <script>
+        var exports = {};
+    </script>
+    <script src="libs/jquery-1.11.0.min.js"></script>
+    <script src="libs/imagecreator.js"></script>
+</head>
+
+<body>
+    <label>
+        Seed:
+        <input id="txtSeed" type="number" />
+    </label>
+      <label>
+        Zoom:
+        <input id="txtZoom" type="number" min="1" max="32" value="8" />
+    </label>
+    <input id="btnLarge" type="button" value="Large image" />
+    <input id="btnRandom" type="button" value="Random" />
+    <input id="btnUploadLargeToImgur" type="button" value="Upload large image to imgur" />
+    <input id="btnCreateGif" type="button" value="Upload gif to imgur" />
+    
+    <label>Steps
+        <input id="chkSteps" type="checkbox">
+    </label>
+    <label>Toggle layer debug
+        <input id="chkToggleLayerDebug" type="checkbox">
+    </label>
+    
+    <div>
+        <div class="layers" style="height:3000px">
+            <canvas id="c1" width="768" height="768"></canvas>
+            <br class="spacer">
+        </div>
+
+        <div class="tilesetWrapper">
+            <img crossOrigin="" id="tileset" src="tileset.png" />
+            <canvas id="tilesetOverlay"></canvas>
+
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
